@@ -394,7 +394,7 @@ export default function Hero() {
         </div>
 
         {/* TEXT + DESCRIPTION giữ nguyên của bạn */}
-        <div className="absolute inset-0 flex flex-col justify-center top-30 px-4 md:px-10 lg:top-90 pointer-events-none z-20">
+        <div className="absolute inset-0 flex flex-col justify-center top-10 px-4 md:px-10 lg:top-90 pointer-events-none z-20">
           <div className="transform -skew-y-6 leading-[0.9]">
             <p className={`${fugaz.className} text-white text-[32px] md:text-[80px] lg:text-[120px]`}>THE BEST</p>
             <p className={`${mistralLike.className} text-white text-[50px] md:text-[110px] lg:text-[200px] drop-shadow-[0_0_20px_#FC5CF2]`}>
@@ -403,7 +403,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative lg:pt-50 px-4 md:mt-16 lg:mt-35 md:px-10 flex flex-col lg:flex-row gap-6 lg:items-center lg:justify-between">
+        <div className="relative mt-30 lg:pt-50 px-4 md:mt-16 lg:mt-35 md:px-10 flex flex-col lg:flex-row gap-6 lg:items-center lg:justify-between">
           <p className={`${poppins.className} text-white text-sm md:text-base lg:w-[50%]`}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
