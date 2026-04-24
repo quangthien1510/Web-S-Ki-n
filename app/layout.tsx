@@ -1,21 +1,23 @@
 import { Geist, Geist_Mono, Inter } from "next/font/google"
-
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils";
 
-const inter = Inter({subsets:['latin'],variable:'--font-sans'})
+import '@mantine/core/styles.css';
+import { MantineProvider } from '@mantine/core';
+
+const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
 
 const fontMono = Geist_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
 })
-
+import ScrollToTop from "./ScrollToTop"; // chỉnh path cho đúng
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode
-}>) {
+}) {
   return (
     <html
       lang="en"
@@ -23,7 +25,12 @@ export default function RootLayout({
       className={cn("antialiased", fontMono.variable, "font-sans", inter.variable)}
     >
       <body>
-        <ThemeProvider>{children}</ThemeProvider>
+        <MantineProvider>
+          <ThemeProvider>
+            <ScrollToTop />
+            {children}
+          </ThemeProvider>
+        </MantineProvider>
       </body>
     </html>
   )

@@ -127,3 +127,12 @@
     @apply font-sans;
     }
 }
+@font-face {
+  font-family: "Mistral";
+  src: url("/fonts/Mistral.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+nextjs-portal {
+  display: none !important;
+}
