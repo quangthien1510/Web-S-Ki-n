@@ -125,7 +125,7 @@ export default function Hero() {
       <div className="relative w-full">
 
         {/* NAVBAR */}
-        <div className={`flex items-center justify-between pt-10 px-4 md:px-8 fixed top-0 left-0 z-50 w-full backdrop-blur-md transition-all duration-500 h-16 lg:h-auto lg:py-4
+        <div className={`flex items-center justify-between px-4 md:px-8 fixed top-0 left-0 z-50 w-full backdrop-blur-md transition-all duration-500 h-16  py-15
           ${showNav ? "translate-y-0 opacity-100 bg-black/40" : "-translate-y-full opacity-0"}`}
         >
           <div className="flex items-center gap-6 -ml-7">
