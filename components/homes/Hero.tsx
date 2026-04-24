@@ -321,32 +321,32 @@ export default function Hero() {
 
         {/* ================= NAVBAR ================= */}
         <div
-          className={`flex items-center justify-between px-4 md:px-8 fixed top-0 left-0 z-50 w-full backdrop-blur-md transition-all duration-500
-          ${showNav ? "translate-y-0 opacity-100 bg-black/40" : "-translate-y-full opacity-0"}`}
-        >
-          <div className="flex items-center gap-6">
-            <Image src="/images/logo.png" alt="logo" width={3000} height={3000} className="w-30 lg:w-60" />
+  className={`flex items-center justify-between pt-10 px-4 md:px-8 fixed top-0 left-0 z-50 w-full backdrop-blur-md transition-all duration-500 h-16 lg:h-auto lg:py-4
+  ${showNav ? "translate-y-0 opacity-100 bg-black/40" : "-translate-y-full opacity-0"}`}
+>
+  <div className="flex items-center gap-6 -ml-7">
+    <Image src="/images/logo.png" alt="logo" width={3000} height={3000} className="w-30 lg:w-60" />
 
-            <div className={`${fugaz.className} hidden md:flex gap-8 lg:gap-14 text-white italic text-[16px] md:text-[18px] lg:text-[32px]`}>
-              <span onClick={() => scrollTo("events")} className="cursor-pointer hover:text-[#FC5CF2]">EVENTS</span>
-              <span onClick={() => scrollTo("price")} className="cursor-pointer hover:text-[#FC5CF2]">PRICE</span>
-              <span onClick={() => scrollTo("menu")} className="cursor-pointer hover:text-[#FC5CF2]">MENU</span>
-              <span onClick={() => scrollTo("crew")} className="cursor-pointer hover:text-[#FC5CF2]">OUR CREW</span>
-            </div>
-          </div>
+    <div className={`${fugaz.className} hidden md:flex gap-8 lg:gap-14 text-white italic text-[16px] md:text-[18px] lg:text-[32px]`}>
+      <span onClick={() => scrollTo("events")} className="cursor-pointer hover:text-[#FC5CF2]">EVENTS</span>
+      <span onClick={() => scrollTo("price")} className="cursor-pointer hover:text-[#FC5CF2]">PRICE</span>
+      <span onClick={() => scrollTo("menu")} className="cursor-pointer hover:text-[#FC5CF2]">MENU</span>
+      <span onClick={() => scrollTo("crew")} className="cursor-pointer hover:text-[#FC5CF2]">OUR CREW</span>
+    </div>
+  </div>
 
-          <div className="flex items-center gap-4">
-            <div className={`${fugaz.className} text-[#FFF7FE] text-[clamp(16px,2.5vw,32px)] flex justify-center mt-5 lg:py-0`}>
-              <button className="bg-[#FC5CF2] px-5 py-2 rounded-full hover:scale-105 transition-transform active:scale-95 shadow-lg">
-                INDULGE TONIGHT
-              </button>
-            </div>
+  <div className="flex items-center gap-4">
+    <div className={`${fugaz.className} text-[#FFF7FE] text-[clamp(16px,2.5vw,32px)] flex justify-center lg:py-0`}>
+      <button className="bg-[#FC5CF2] px-5 py-2 rounded-full hover:scale-105 transition-transform active:scale-95 shadow-lg">
+        INDULGE TONIGHT
+      </button>
+    </div>
 
-            <div className="md:hidden text-3xl text-white cursor-pointer" onClick={() => setOpen(true)}>
-              ☰
-            </div>
-          </div>
-        </div>
+    <div className="md:hidden text-3xl text-white cursor-pointer" onClick={() => setOpen(true)}>
+      ☰
+    </div>
+  </div>
+</div>
 
         {/* ================= MOBILE MENU ================= */}
         <div className={`fixed inset-0 z-[999] flex flex-col items-center justify-center gap-10 text-white text-3xl bg-black/90 backdrop-blur-md transition-all duration-500
